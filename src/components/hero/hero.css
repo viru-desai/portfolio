@@ -1,0 +1,85 @@
+.hero {
+    height: calc(100vh - 100px); /* Keeps the hero height below the navbar */
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+    margin-top: 100px; /* Added margin-top to push the hero section below the navbar */
+}
+
+.wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+}
+.textContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+h2{
+    font-size: 30px;
+    color: rebeccapurple;
+    letter-spacing: 10px;
+}
+h1{
+    font-size: 40px;
+}
+.buttons .button {
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;  /* Ensures that the div behaves like a button */
+}
+
+.buttons .button:hover {
+    background-color: #1e1e30;
+    transform: translateY(-2px);
+}
+
+.buttons div {
+    cursor: pointer;
+}
+.buttons {
+    position: relative; /* Ensure the buttons are layered correctly */
+    z-index: 10; /* Brings the buttons above other elements */
+}
+
+.scroll {
+    position: relative;
+    z-index: 10; /* Ensures the scroll button is above */
+}
+
+.textContainer img{
+    width: 100px;
+    height: 60px;
+}
+
+.imageContainer {
+    height: 100%;
+    width: 50%; /* Set the width to 50% to move it to the right */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;    
+}
+.slidingTextContainer{
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+.service {
+  height: 100%; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Ensures content stays within bounds */
+  color: white;
+}
+
+.heading {
+  position: absolute;
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  z-index: 2; /* Ensure it stays above background images */
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mountains,
+.planets,
+.stars {
+  position: absolute;
+}
+
+.mountains img,
+.planets img,
+.stars img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}

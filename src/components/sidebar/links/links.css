@@ -1,0 +1,32 @@
+.links {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Spacing between links */
+    width: 100%; /* Full width container */
+    height: 100%; /* Ensure it fills the parent */
+    text-align: center;
+    background-color: transparent; /* Inherits background from parent */
+  }
+  
+  .link-item {
+    text-decoration: none; /* No underline for links */
+    font-size: 24px; /* Font size for links */
+    font-weight: bold; /* Enhance link visibility */
+    color: black; /* Default color for links */
+    padding: 10px 20px; /* Add padding for clickable area */
+    border-radius: 10px; /* Rounded edges */
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .link-item:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+    color: #ffffff; /* Change text color on hover */
+    background-color: #505064; /* Add a subtle background color */
+  }
+  
+  .link-item:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+  }
+  
